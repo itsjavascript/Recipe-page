@@ -34,10 +34,11 @@
 }
 
 body{
-    background-color: var(--rosewhite-color) ;
+    background-color: red ;
     font-family: var(--paragraph-font);
 }
 
+/* Base style */
 
 h1, h2{
     font-family: Young Serif, Serif;
@@ -49,18 +50,23 @@ p{
     font-family: var(--paragraph-font);
 }
 
+.heading{
+    color: var(--nutmeg-color);
+}
+
+/* End of Base style */
+
 main{
     background-color: rgb(255, 255, 255);
     width: 50%;
-    height: 100%;
-    margin: 0 auto;
-    margin-top: 10%;
+    height: auto;
+    margin: 15% auto;
     border-radius: 20px;
 }
 
 .img_container{
     margin: 0 auto;
-    padding: 35px;
+    padding: 35px 0 35px 0;
 
 }
 
@@ -72,11 +78,11 @@ main{
     margin: auto;
 }
 
-
+/* 
 .receipe_heading{
     margin-left: 35px;
     margin-right: 35px;
-}
+} */
 
 #main_heading{
     font-size: 40px;
@@ -91,13 +97,14 @@ main{
 }
 
 .prep_time_heading{
-    padding-inline: 7% 7%;
+    padding-inline: 3% 3%;
     font-size: 20px;
     margin-bottom: 5px;
+    color: var(--raspberry-color);
 }
 
 .prep_total_time{
-    padding-inline: 10% 10%;
+    padding-inline: 7% 7%;
 }
 
 .prep_total_time li, .ingredients_content li{
@@ -105,20 +112,53 @@ main{
     padding-left: 15px;
 }
 
-.prep_total_time li span{
+.prep_total_time span, .instructions_content span{
     font-weight: 600;
     color: var(--darkcharcoal-color);
 }
 
-.ingredients_heading{
-    margin-bottom: 10px;
-    margin-left: 35px;
+.preperations{
+    margin: 0 35px 0 35px;
 }
 
-.ingredients_content{
-    padding-inline: 8% 8%;
+.ingredients{
+    margin-bottom: 4%;
 }
 
+.ingredients_heading, .instructions_heading{
+    padding-bottom: 10px;
+    
+}
+
+.ingredients_content, .instructions_content{
+    padding-inline: 4% 4%;
+}
+
+.instructions{
+    border-top: 1px solid var(--lightgrey-color);
+    margin: 0 35px 0 35px
+}
+
+.instructions_content li{
+    padding: 5px 0 5px 0;
+}
+
+.instructions_heading{
+    margin-top: 25px;
+}
+
+.instructions_content{
+    border-bottom: 1px solid var(--lightgrey-color);
+    padding-bottom: 25px;
+}
+
+.nutrition_heading{
+    margin: 15px 0 15px 0;
+}
+
+.nutrition_table{
+    padding-inline: 5% 5%;
+}
 
 
 tbody th{
@@ -130,16 +170,15 @@ tbody td{
     font-weight: bold;
 }
 
-
-
-
-.heading{
-    color: var(--nutmeg-color);
+th, td{
+    border-bottom: 1px solid red;
 }
 
-.prep_time_heading{
-    color: var(--raspberry-color);
-}
+
+
+
+
+
 
 .attribution{
     display: none;
