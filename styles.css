@@ -34,7 +34,7 @@
 }
 
 body{
-    background-color: red ;
+    background-color: var(--rosewhite-color) ;
     font-family: var(--paragraph-font);
 }
 
@@ -60,7 +60,7 @@ main{
     background-color: rgb(255, 255, 255);
     width: 50%;
     height: auto;
-    margin: 15% auto;
+    margin: 5% auto;
     border-radius: 20px;
 }
 
@@ -110,6 +110,11 @@ main{
 .prep_total_time li, .ingredients_content li{
     padding: 6px;
     padding-left: 15px;
+    
+}
+
+.prep_total_time li::marker{
+    color: var(--raspberry-color);
 }
 
 .prep_total_time span, .instructions_content span{
@@ -130,6 +135,12 @@ main{
     
 }
 
+.ingredients_content li::marker , .instructions_content li::marker{
+    color: var(--nutmeg-color);
+    font-weight: 600;
+}
+
+
 .ingredients_content, .instructions_content{
     padding-inline: 4% 4%;
 }
@@ -140,7 +151,7 @@ main{
 }
 
 .instructions_content li{
-    padding: 5px 0 5px 0;
+    padding: 5px 0 5px 15px;
 }
 
 .instructions_heading{
@@ -156,24 +167,37 @@ main{
     margin: 15px 0 15px 0;
 }
 
-.nutrition_table{
-    padding-inline: 5% 5%;
+.nutrition_heading p{
+    margin-top: 15px;
 }
 
+.nutrition_table{
+    padding-bottom: 7%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    padding: 3px 0 3px 0;
+}
+
+tr:nth-child(-n+3){
+    border-bottom: 1px solid var(--lightgrey-color);    
+}
+
+th, td{
+    padding: 15px 0 15px 0;
+}
 
 tbody th{
     text-align: left;
     font-weight: normal;
+    padding-inline: 5% 5%;
 }
 
 tbody td{
     font-weight: bold;
 }
-
-th, td{
-    border-bottom: 1px solid red;
-}
-
 
 
 
@@ -183,3 +207,13 @@ th, td{
 .attribution{
     display: none;
 }
+
+
+
+/* 
+*Todo
+
+1. Add media query Mobile: 375px
+
+
+*/
