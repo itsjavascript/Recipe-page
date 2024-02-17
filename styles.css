@@ -78,11 +78,7 @@ main{
     margin: auto;
 }
 
-/* 
-.receipe_heading{
-    margin-left: 35px;
-    margin-right: 35px;
-} */
+
 
 #main_heading{
     font-size: 40px;
@@ -200,6 +196,67 @@ tbody td{
 }
 
 
+@media (min-width: 320px) and (max-width: 425px) {
+body{
+    background-color: red;
+}
+
+main{
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+}
+
+.preperations{
+    
+    margin: 0;
+    
+    .img_container{
+        padding: 0;
+        margin: 0;
+    }
+
+    img{
+        border-radius: 0;
+    }
+
+    #main_heading{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 15.5px;
+        line-height: 1.4;
+    }
+
+    .prep_total_time{
+        padding-inline: 12% 12%;
+    }
+
+    .prep_time_heading {
+        padding-inline: 7%;
+    }
+}
+
+.instructions_heading{
+    h2{
+        font-size: 26px;
+    }
+}
+
+.heading{
+    font-weight: 700;
+}
+
+.recipe_heading, .prep_time, .ingredients{
+    margin: 10% 35px 10% 35px;
+}
+
+tbody td{
+    color: var(--nutmeg-color);
+}
+}
+
 
 
 
@@ -209,11 +266,3 @@ tbody td{
 }
 
 
-
-/* 
-*Todo
-
-1. Add media query Mobile: 375px
-
-
-*/
